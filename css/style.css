@@ -26,7 +26,7 @@ body {
 @media(min-width: 883px) {
     #main-content {
         position: absolute;
-        top: 3.5em;
+        top: 3.7em;
         left: 0px;
         right: 0px;
         bottom: 0px;
@@ -52,6 +52,15 @@ body {
     }
 }
 
+
+/* Adjust scrollbar for when height of header changes */
+
+@media(min-width: 883px) and (min-height: 600px) {
+    #main-content {
+        top: 8.5vh;
+    }
+}
+
 .container {
     width: 80%;
     margin-left: auto;
@@ -71,10 +80,6 @@ body {
     text-transform: uppercase;
 }
 
-#icon {
-    box-shadow: inset 0 0 0.5em 0.5em #101010, 0 0 2em 0.5em #101010;
-}
-
 
 /* Font Sizes */
 
@@ -92,6 +97,13 @@ body {
 
 .big {
     font-size: 8em;
+}
+
+@media(max-width: 800px) {
+    .big {
+        margin-top: 1em;
+        font-size: 6em;
+    }
 }
 
 .very-big {
@@ -149,7 +161,7 @@ header #branding h1 {
         height: 7.25vh;
     }
     header nav {
-        margin-top: 2.5vh;
+        margin-top: 2.75vh;
     }
 }
 
@@ -196,9 +208,13 @@ ul {
 button {
     background-color: #eeeeee;
     border-radius: 1.75em;
-    padding: 1em;
+    padding: 1.25em;
     border: none;
     box-shadow: 0 0 1em 1em #202020;
+}
+
+button:hover {
+    transition: all ease 1.5s;
 }
 
 button a {
@@ -209,7 +225,95 @@ button a {
 }
 
 
+/* Contact */
+
+#contact {
+    transition: all ease 0.4s;
+    position: absolute;
+    position: fixed;
+    top: 10vh;
+    left: 7.5%;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    background: #202020;
+    top: 7em;
+    bottom: 2em;
+    left: 2em;
+    right: 2em;
+    border-radius: 1em;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    overflow-y: auto;
+    box-shadow: 0 0 1em 0.1em #202020;
+}
+
+#contact form {
+    width: 80%;
+}
+
+#contact input,
+#contact textarea,
+#contact select {
+    width: 60%;
+    font-family: system-ui;
+}
+
+@media(max-width: 883px) {
+    #contact input,
+    #contact textarea,
+    #contact select {
+        width: 80%;
+        font-family: system-ui;
+    }
+}
+
+#contact div {
+    margin: 1.5em;
+}
+
+#contact label {
+    display: block;
+}
+
+#contact p {
+    margin: 0;
+}
+
+#contact button {
+    background-color: #eeeeee;
+    border-radius: 1.75em;
+    padding: 1.25em;
+    border: none;
+    box-shadow: 0 0 1em 1em #202020;
+    color: #101010;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "League Spartan", system-ui;
+    transition: all ease 1.5s;
+}
+
+#contact button:hover {
+    transition: all ease 1.5s;
+    transform: translateZ(-30%);
+}
+
+
 /* TODO: Do contact button on side for pc */
 
 
 /* TODO: Do contact floating button on bottom right for mobile */
+
+
+/* Footer */
+
+footer {
+    background: #202020;
+    padding: 1em;
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+footer p {
+    margin: 0;
+}
