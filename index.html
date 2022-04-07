@@ -10,21 +10,26 @@
     <meta property="og:title" content="Home - Maxed Vision" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://maxedvision.github.io/" />
-    <meta property="og:image" content="http://my.site.com/images/thumb.png" />
+    <meta property="og:image" content="img/icon_circle.png" />
     <meta property="og:description" content="The vision beyond stars." />
-    <meta name="theme-color" content="#5985F7">
+    <meta name="apple-mobile-web-app-title" content="Maxed Vision" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#101010" />
+    <meta name="theme-color" content="#101010">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/icon_circle_low.png">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
     <header>
         <div class="container">
             <div id="branding">
-                <img src="img/icon_transparent.png" alt="Logo" id="icon">
+                <a href="index.html">
+                    <img src="img/icon_circle.png" alt="Logo" id="icon">
+                </a>
             </div>
             <nav>
                 <ul>
@@ -40,19 +45,64 @@
     <div id="main-content">
         <div class="container">
             <h1 id="slogan" class="big">The vision beyond stars.</h1>
-            <button><a href="games.html" class="small">The vision of Games</a></button>
+            <button><a href="games.html" class="small">Our visions</a></button>
             <p><br><br><br><br><br><br><br><br><br><br>
                 <br><br><br><br><br><br><br><br><br><br>
                 <br><br><br><br><br><br><br><br><br><br>
                 <br><br><br><br><br><br><br><br><br><br>
                 <br><br><br><br><br><br><br><br><br><br>
-                <br>+<br><br><br><br><br><br><br><br>+<br>
-                <br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br>Hello world!<br>
             </p>
         </div>
 
+        <div class="container" id="contact" style="display: none;">
+            <p id="contact-cancel" onclick="contactCancel()">✖</p>
+            <form action="https://formsubmit.co/fdac07fe7b93f9fb57b65365b76e39a9" method="POST">
+                <!-- Honeypot (filter automated bots)-->
+                <input type="text" name="_honey" style="display: none;">
+                <!-- Disable Captcha -->
+                <input type="hidden" name="_captcha" value="false">
+                <!-- Success Page -->
+                <input type="hidden" name="_next" value="success.html">
+
+                <!-- Name Input -->
+                <div>
+                    <label for="firstName" class="form-label">Name</label>
+                    <input type="text" class="form-control" name="Name" id="firstName" required>
+                </div>
+
+                <!-- Email Input -->
+                <div>
+                    <label for="emailInfo" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" name="Email" id="emailInfo" required>
+                </div>
+
+                <!-- Type Input -->
+                <div>
+                    <label for="subject">Subject</label>
+                    <select name="subject" id="lang">
+                    <optgroup label="Games">
+                        <option value="Leaping Light">Leaping Light</option>
+                    </optgroup>
+                    <option value="python">Python</option>
+                  </select>
+                </div>
+
+                <!-- Message Input -->
+                <div>
+                    <label for="comments" class="form-label">Your message</label>
+                    <textarea class="form-control" id="message" name="Message" rows="3" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
         <footer>
-            <p></p>
+            <p>&copy Maxed Vision, 2022.</p>
+            <button onclick="contactShow()">Contact us!</button>
         </footer>
     </div>
 
