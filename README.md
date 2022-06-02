@@ -1,4 +1,4 @@
-<a href="https://github.com/SuperMFreak/supermfreak.github.io/"><h1 align="center">maxedvision.github.io<project-name></h1></a>
+<a href="https://maxedvision.github.io/"><h1 align="center">maxedvision.github.io<project-name></h1></a>
 
 <p align="center"><project-description>Official Maxed Vision website!</p>
 
