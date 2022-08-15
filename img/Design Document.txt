@@ -1,0 +1,10 @@
+       Maxed Vision - Design Document
+--------------------------------------------
+  Background Colour: #101010
+  Bright BG Colour:  #202020
+  White:             #eeeeee
+  Accent Colour 1:   #96bbff
+  Accent Colour 2:   #2c3a4e
+  Accent Colour 3:   #1c2635
+  Logo Font:         League Spartan
+  Slogan Font:       Yanone Kaffeesatz Extra
